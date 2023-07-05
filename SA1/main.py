@@ -59,15 +59,15 @@ def getSensorsData(car, angle):
     x = car.x + car.w/2
     y = car.y 
     
-    # Create a list of angle at which sensors will be placed from i.e -10, -30, -50 ..... -170
+    # Create a list of angle 'sensorAngles' at which sensors will be placed from i.e -10, -30, -50 ..... -170
     sensorAngles = [-10,-30,-50,-70,-90,-110,-130,-150,-170]
 
     # Loop through each sensorAngle in sensorAngles and draw the sensor   
     for sensorAngle in sensorAngles:
         newX = getSensorX(x, angle, sensorAngle, margin)
         newY = getSensorY(y, angle, sensorAngle, margin)      
-        
-        pygame.draw.rect(screen,(0, 255,0), [newX, newY, 5, 5])
+    
+    pygame.draw.rect(screen,(0, 255,0), [newX, newY, 5, 5])
         
     
 gen=0
