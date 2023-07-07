@@ -67,7 +67,7 @@ def getSensorsData(car, angle):
         newX = getSensorX(x, angle, sensorAngle, margin)
         newY = getSensorY(y, angle, sensorAngle, margin)      
     
-    pygame.draw.rect(screen,(0, 255,0), [newX, newY, 5, 5])
+        pygame.draw.rect(screen,(0, 255,0), [newX, newY, 5, 5])
         
     
 gen=0
